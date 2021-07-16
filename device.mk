@@ -31,6 +31,9 @@ ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 endif
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
