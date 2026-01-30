@@ -19,6 +19,7 @@ $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 # Pixel build flags
 TARGET_SCREEN_WIDTH := 1080
 TARGET_ENABLE_BLUR := true
+CUSTOM_MAINTAINER := kylieeXD
 
 # Device manufacturer
 PRODUCT_NAME := custom_surya
