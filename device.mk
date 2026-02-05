@@ -10,6 +10,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc) \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
 
+# Signing
+-include vendor/evolution-priv/keys/keys.mk
+
 # Camera
 TARGET_USES_MIUI_CAMERA := true
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
