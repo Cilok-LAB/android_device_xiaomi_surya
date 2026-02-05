@@ -12,6 +12,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 TARGET_USES_MIUI_CAMERA := true
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
 PRODUCT_PACKAGES += \
     libpiex_shim
