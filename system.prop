@@ -34,3 +34,9 @@ wifi.interface=wlan0
 # Telephony
 # Disable handling audio direction changes on IMS calls.
 ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
+
+# Additional
+# Hardware Description
+ro.device.chipset=Qualcomm® Snapdragon 732G
+ro.device.display_resolution=6.67" IPS LCD 1080x2400
+ro.device.colorbody_phone=Cobalt Blue, Shadow Gray

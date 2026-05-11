@@ -14,14 +14,21 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# ArrowOS flags
+DEVICE_MAINTAINER := kylieeXD
+DEVICE_MAINTAINER_LINK := https://saweria.co/CilokG
+ARROW_GAPPS := false
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Device Manufacture
 PRODUCT_NAME := arrow_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
 PRODUCT_MANUFACTURER := Xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# ArrowOS additions
-DEVICE_MAINTAINER := TheStrechh
-ARROW_GAPPS := true
