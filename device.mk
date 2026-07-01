@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # XiaomiParts
-# $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
+$(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
 # Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/surya-camera.mk)
