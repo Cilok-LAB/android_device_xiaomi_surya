@@ -322,7 +322,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgr \
+    android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
 
 # Enable adpf cpu hint session for SurfaceFlinger and HWUI
